@@ -29,6 +29,23 @@ Rodando com logs detalhados:
 DEBUG="codeceptjs:*" npx codeceptjs run --ai
 ```
 
+## Testes de Localizadores  
+
+### Teste 1: Removendo Identificadores  
+📌 **Objetivo**: Avaliar a capacidade da IA de reconhecer elementos mesmo com a remoção de dois `#` nos localizadores.  
+🔍 **Hipótese**: A IA deve conseguir adaptar-se e encontrar os elementos corretamente.  
+
+![Teste 1](./assets/test1.png)  
+
+---
+
+### Teste 2: Alteração de Localizadores no Login  
+📌 **Objetivo**: Validar a robustez da IA ao utilizar localizadores que diferem significativamente dos originais.  
+🔍 **Hipótese**: A IA pode falhar ou exigir um ajuste manual para encontrar os elementos corretos.  
+
+![Teste 2](./assets/test2.png)  
+
+
 ---
 
 📌 **Observação:** Certifique-se de que as configurações do CodeceptJS e do Playwright estejam corretas antes de executar os testes.
