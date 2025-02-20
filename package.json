@@ -1,0 +1,16 @@
+{
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "def": "codeceptjs def",
+    "build": "tsc --noEmit"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "groq-sdk": "^0.12.0"
+  },
+  "devDependencies": {
+    "codeceptjs": "3.6.1",
+    "playwright": "^1.49.0"
+  }
+}
