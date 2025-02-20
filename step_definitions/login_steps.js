@@ -1,5 +1,4 @@
 const { I, loginPage } = inject();
-// Add in your custom step files
 
 Given('que o usuário esteja na página de Login', () => {
   I.amOnPage(`${process.env.BASE_URL}/login`);
@@ -18,5 +17,5 @@ When('confirmar a senha corretamente', () => {
 })
 
 Then('será logado no sistema', () => {
-
+  I.waitForElement('//*[@id="rc-menu-uuid-93690-1-/anuncios-popup"]/li[1]', 10);
 })
